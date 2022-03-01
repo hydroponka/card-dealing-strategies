@@ -7,7 +7,7 @@ Each game defines how many cards should be dealt to a player and what additional
 It's result of it is a Map containing named card stacks (as Lists).
 Each player's stack has a name on its number: "Player 1", "Player 2", an so on.
 Additional stacks varies from game to game.
-The rest of the card deck becomes a "Remaining" stack.
+The rest, if any, of the card deck becomes a "Remaining" stack.
 
 Note that at first, cards are dealt to players, one per round and then cards are dealt to additional stacks and the remaining deck becomes a "Remaining" stack.
 
