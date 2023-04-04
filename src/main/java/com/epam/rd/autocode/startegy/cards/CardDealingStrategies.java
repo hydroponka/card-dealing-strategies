@@ -126,20 +126,15 @@ public class CardDealingStrategies {
                     stacks.put(playerKey, playerCards);
                 }
             }
+            List<Card> trumpCard = new ArrayList<>();
+            trumpCard.add(deck.dealCard());
+            stacks.put("Trump card", trumpCard);
 
             List<Card> remaining = new ArrayList<>();
             while (deck.size() > 0) {
                 remaining.add(deck.dealCard());
             }
             stacks.put("Remaining", remaining);
-
-            List<Card> trumpCard = new ArrayList<>();
-            while (deck.size() > 0) {
-                trumpCard.add(deck.dealCard());
-                stacks.put("TrumpCard", trumpCard);
-                return stacks;
-            }
-            stacks.put("TrumpCard", trumpCard);
             return stacks;
         }
     }
